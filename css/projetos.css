@@ -27,7 +27,7 @@
 .caixa-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 80px;
 }
 
 .projetos-caixa-information {
@@ -63,19 +63,22 @@
 }
 
 .bikcraft {
-  background-image: url(../images/projeto1.png);
+  background-image: url(../images/projeto1.jpg);
   background-position: top left;
 }
 
-.elemento2 {
-}
-
-.elemento3 {
+.curriculo-origamid {
+  background-image: url(../images/projeto2.jpg);
+  background-position: left top;
 }
 
 @media (max-width: 400px) {
   .projetos-caixa-information-conteudo {
     width: 80vw;
     height: 80vw;
+  }
+
+  .caixa-grid {
+    gap: 30px;
   }
 }
