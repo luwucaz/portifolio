@@ -25,10 +25,9 @@
 }
 
 .caixa-grid {
-  display: grid;
-  grid-template-columns: min-content min-content min-content;
-  gap: 50px 100px;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projetos-caixa-information {
@@ -45,6 +44,15 @@
   width: fit-content;
 }
 
+.projetos-caixa-information-titulo a {
+  color: black;
+  text-decoration: none;
+}
+
+.projetos-caixa-information-titulo a:hover {
+  color: aquamarine;
+}
+
 .projetos-caixa-information-conteudo {
   font-size: 2.5rem;
   display: inline-block;
@@ -52,5 +60,22 @@
   border: solid var(--cor-principal-caixa-conteudo) 5px;
   width: 350px;
   height: 350px;
+}
+
+.bikcraft {
   background-image: url(../images/projeto1.png);
+  background-position: top left;
+}
+
+.elemento2 {
+}
+
+.elemento3 {
+}
+
+@media (max-width: 400px) {
+  .projetos-caixa-information-conteudo {
+    width: 80vw;
+    height: 80vw;
+  }
 }
