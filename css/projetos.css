@@ -24,6 +24,13 @@
   width: fit-content;
 }
 
+.caixa-grid {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 50px 100px;
+  flex-wrap: wrap;
+}
+
 .projetos-caixa-information {
   display: flex;
   flex-direction: column;
@@ -43,5 +50,7 @@
   display: inline-block;
   padding: 10px;
   border: solid var(--cor-principal-caixa-conteudo) 5px;
-  width: fit-content;
+  width: 350px;
+  height: 350px;
+  background-image: url(../images/projeto1.png);
 }
